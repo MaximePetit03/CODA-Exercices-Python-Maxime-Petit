@@ -75,6 +75,13 @@ def exercice13():
     for i in range (1, 6):
      print(i)
 
+#Exercice 14
+def exercice14():
+    n = int(input("Entrez un chiffre ou un nombre "))
+    print("La table de multiplication de ", n,"est :")
+    for i in range(1,6):
+     print(i , " x ", n, " = ",i*n)
+    
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -105,6 +112,8 @@ def main():
         exercice12()
     elif choix == "13":
         exercice13()
+    elif choix == "14":
+        exercice14()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
