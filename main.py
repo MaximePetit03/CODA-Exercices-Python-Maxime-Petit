@@ -94,6 +94,12 @@ def exercice16():
     aire = longueur**2
     print("l'aire de ce carré est :", aire)
 
+#Exercice 17
+def exercice17():
+    euro = int(input("Donne moi une somme d'argent : "))
+    dollars = euro*1.1
+    print("L'équivalent en dollars est", dollars)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -130,6 +136,8 @@ def main():
         exercice15()
     elif choix == "16":
         exercice16()
+    elif choix == "17":
+        exercice17()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
