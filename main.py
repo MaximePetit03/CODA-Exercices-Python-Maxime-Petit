@@ -47,6 +47,11 @@ def exercice8():
     c = a / b
     print(c)
 
+#Exercice 9
+def exercice9():
+    a = int(input("Donnez un nombre"))
+    b = a**2 
+    print(b)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -67,6 +72,8 @@ def main():
         exercice7()
     elif choix == "8" :
         exercice8()
+    elif choix == "9" :
+        exercice9()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
