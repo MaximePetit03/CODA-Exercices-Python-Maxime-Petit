@@ -106,6 +106,14 @@ def exercice18():
     seconde = minute*60
     print("Ton temps en seconde est :", seconde)
 
+#Exercice 19
+def exercice19():
+    prixHt = int(input("Donner un prix pour y ajouter la TVA : "))
+    TVA = 20/100
+    PrixTVA = prixHt*(1+TVA)
+    print("Votre prix vaut", PrixTVA, "avec la TVA")
+
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -146,6 +154,8 @@ def main():
         exercice17()
     elif choix == "18":
         exercice18()
+    elif choix == "19":
+        exercice19()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
