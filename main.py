@@ -26,6 +26,14 @@ def exercice5():
     c = a + b
     print(c)
 
+#Exercice 6
+def exercice6():
+    a = int(input("Donnez un nombre positif"))
+    b = int(input("donner un 2ème nombre positif à soustraire au précédent"))
+    c = a - b
+    print(c)
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -39,6 +47,8 @@ def main():
         exercice4()
     elif choix == "5" :
         exercice5()
+    elif choix == "6" :
+        exercice6()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
