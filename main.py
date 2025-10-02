@@ -87,7 +87,13 @@ def exercice15():
     longueur = int(input("Donner moi la longueur d'un coté d'un carré :"))
     périmètre = longueur*4
     print("le périmètre de ce carré est :", périmètre)
-    
+
+#Exercice 16
+def exercice16():
+    longueur = int(input("Donner moi la longueur d'un coté d'un carré :"))
+    aire = longueur**2
+    print("l'aire de ce carré est :", aire)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -122,6 +128,8 @@ def main():
         exercice14()
     elif choix == "15":
         exercice15()
+    elif choix == "16":
+        exercice16()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
