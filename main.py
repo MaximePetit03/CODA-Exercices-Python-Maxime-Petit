@@ -40,6 +40,13 @@ def exercice7():
     c = a * b
     print(c)
 
+#Exercice 8
+def exercice8():
+    a = int(input("Donnez un nombre positif"))
+    b = int(input("donner un 2ème nombre positif à diviser au précédent"))
+    c = a / b
+    print(c)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -58,6 +65,8 @@ def main():
         exercice6()
     elif choix == "7" :
         exercice7()
+    elif choix == "8" :
+        exercice8()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
