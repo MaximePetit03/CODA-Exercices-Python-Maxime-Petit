@@ -113,6 +113,11 @@ def exercice19():
     PrixTVA = prixHt*(1+TVA)
     print("Votre prix vaut", PrixTVA, "avec la TVA")
 
+#Exercice 20
+def exercice20():
+    prénom = input("Comment t'appelles tu ? ")
+    age = input("quel age a-tu ? ")
+    print(prénom, "a", age, "ans")
 
 
 def main():
@@ -156,6 +161,8 @@ def main():
         exercice18()
     elif choix == "19":
         exercice19()
+    elif choix == "20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
