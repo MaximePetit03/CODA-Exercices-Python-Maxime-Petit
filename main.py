@@ -33,6 +33,13 @@ def exercice6():
     c = a - b
     print(c)
 
+#Exercice 7
+def exercice7():
+    a = int(input("Donnez un nombre positif"))
+    b = int(input("donner un 2ème nombre positif à multiplié au précédent"))
+    c = a * b
+    print(c)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -49,6 +56,8 @@ def main():
         exercice5()
     elif choix == "6" :
         exercice6()
+    elif choix == "7" :
+        exercice7()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
