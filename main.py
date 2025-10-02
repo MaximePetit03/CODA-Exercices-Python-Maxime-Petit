@@ -81,6 +81,12 @@ def exercice14():
     print("La table de multiplication de ", n,"est :")
     for i in range(1,6):
      print(i , " x ", n, " = ",i*n)
+
+#Exercice 15
+def exercice15():
+    longueur = int(input("Donner moi la longueur d'un coté d'un carré :"))
+    périmètre = longueur*4
+    print("le périmètre de ce carré est :", périmètre)
     
 
 def main():
@@ -114,6 +120,8 @@ def main():
         exercice13()
     elif choix == "14":
         exercice14()
+    elif choix == "15":
+        exercice15()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
