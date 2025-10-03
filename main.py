@@ -281,6 +281,13 @@ def exercice35():
             i = i+1
     except ValueError:
         print("Tapper un nombre")
+
+#Exercice 36
+def exercice36():
+        mot = input("Donne moi un mot : ")
+        i = int(input("Donne moi le nombre de fois que tu veux répeter le mot : "))
+        for i in range(i):
+         print(mot)
         
 
 
@@ -357,6 +364,8 @@ def main():
         exercice34()
     elif choix == "35":
         exercice35()
+    elif choix == "36":
+        exercice36()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
