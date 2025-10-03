@@ -165,6 +165,19 @@ def exercice24():
     except ValueError:
         print("Tapper un nombre")
 
+#Exercice 25
+def exercice25():
+    try :
+        a = int(input("Donne moi un nombre : "))
+        b = int(input("Donne moi un autre nombre : "))
+        if a>b :
+            print("l'ordre est décroissant")
+        elif a<b :
+            print("l'ordre est croissant")
+        else :
+            print(a,"et", b ,"sont identiques donc l'ordre est ni croissant ni décroissant")
+    except ValueError:
+        print("Tapper un nombre")
 
 
 def main():
@@ -218,6 +231,8 @@ def main():
         exercice23()
     elif choix == "24":
         exercice24()
+    elif choix == "25":
+        exercice25()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
