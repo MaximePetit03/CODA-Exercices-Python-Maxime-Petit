@@ -151,6 +151,21 @@ def exercice23():
     except ValueError:
         print("Tappe un nombre")
 
+#Exercice 24
+def exercice24():
+    try :
+        a = int(input("Donne moi un nombre : "))
+        b = int(input("Donne moi un autre nombre : "))
+        if a>b :
+            print(a, "est plus grand que",b)
+        elif a<b :
+            print(a, "est plus petit que",b)
+        else :
+            print("Les 2 nombres sont égaux")
+    except ValueError:
+        print("Tapper un nombre")
+
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -201,6 +216,8 @@ def main():
         exercice22()
     elif choix == "23":
         exercice23()
+    elif choix == "24":
+        exercice24()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
