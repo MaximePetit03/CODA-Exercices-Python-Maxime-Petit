@@ -313,6 +313,26 @@ def exercice38():
          print(nombre/nombre2)
     except ValueError:
         print("Tapper un nombre")
+
+#Exercice 39
+def exercice39():
+    import random
+    try:
+        print(random.randrange(1,1000))
+        N =random.randrange(1,1000)
+        if (N % 2) == 0 :
+         N = N*0
+        else:
+         N = N/N
+        choix = int(input("Tu as 1 chance sur 1000, devine si le nombre est pair ou impair en tapant 0 pour pair et 1 pour impair : "))
+        if choix == N:
+            print("Tu as gagné")
+        else:
+            print("Tu as perdu")
+    except ValueError:
+        print("Tappe un nombre")
+    
+
     
         
 
@@ -394,6 +414,10 @@ def main():
         exercice37()
     elif choix == "38":
         exercice38()
+    elif choix == "39":
+        exercice39()
+    elif choix == "40":
+        exercice40()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
