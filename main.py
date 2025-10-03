@@ -249,10 +249,15 @@ def exercice32():
     except ValueError:
         print("Tappe un nombre")
 
-
-
-
-
+#Exercice 33
+def exercice33():
+    try :
+        n = int(input("Entrez un chiffre ou un nombre "))
+        print("La table de multiplication de ", n,"est :")
+        for i in range(1,11):
+          print(i , " x ", n, " = ",i*n)
+    except ValueError :
+        print("Tappe un nombre")
 
 
 
@@ -321,6 +326,8 @@ def main():
         exercice31()
     elif choix == "32":
         exercice32()
+    elif choix == "33":
+        exercice33()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
