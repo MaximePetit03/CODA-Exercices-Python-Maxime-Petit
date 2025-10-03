@@ -297,9 +297,24 @@ def exercice37():
         print("* "*(i))
         espace-=1
 
+#Exercice 38
+def exercice38():
+    try:
+        opération = int(input("choisis un mode d'opération entre :\n 1 pour soustraction\n 2 pour addition\n 3 pour multiplication \n 4 pour division \n : "))
+        nombre = int(input("Entrer un nombre : "))
+        nombre2 = int(input("Entrer un nombre  à soustraire, diviser en fonction de votre choix précedent : "))
+        if opération == 1:
+         print(nombre-nombre2)
+        elif opération == 2:
+         print(nombre+nombre2)
+        elif opération == 3:
+         print(nombre*nombre2)
+        elif opération== 4:
+         print(nombre/nombre2)
+    except ValueError:
+        print("Tapper un nombre")
+    
         
-
-
 
 
 def main():
@@ -377,6 +392,8 @@ def main():
         exercice36()
     elif choix == "37":
         exercice37()
+    elif choix == "38":
+        exercice38()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
