@@ -140,6 +140,17 @@ def exercice22():
     except ValueError:
       print("Tappe un nombre")
 
+#Exercice 23
+def exercice23():
+    try :
+        note = int(input("Donne moi ta note : "))
+        if note >= 10 :
+            print("Validé")
+        else :
+            print("Pas validé")
+    except ValueError:
+        print("Tappe un nombre")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -188,6 +199,8 @@ def main():
         exercice21()
     elif choix == "22":
         exercice22()
+    elif choix == "23":
+        exercice23()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
