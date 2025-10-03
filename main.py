@@ -288,6 +288,15 @@ def exercice36():
         i = int(input("Donne moi le nombre de fois que tu veux répeter le mot : "))
         for i in range(i):
          print(mot)
+
+#Exercice 37
+def exercice37():
+    espace = 15
+    for i in range(1, 4):
+        print(" "*espace, end="")
+        print("* "*(i))
+        espace-=1
+
         
 
 
@@ -366,6 +375,8 @@ def main():
         exercice35()
     elif choix == "36":
         exercice36()
+    elif choix == "37":
+        exercice37()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
