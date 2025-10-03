@@ -192,7 +192,18 @@ def exercice27():
     except ValueError:
         print("Tapper un nombre")
 
-
+#Exercice 28
+def exercice28():
+    try:
+        température = int(input("Donne moi la température de ton eau : "))
+        if température<0 :
+         print ("ton eau est solide sous pression atmospherique normal")
+        elif 0<=température<=100 :
+         print("ton eau est liquide sous pression atmospherique normal")
+        elif température>100 :
+         print("ton eau est gazeuse sous pression atmospherique normal")
+    except ValueError:
+        print("Tappe une température")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -249,6 +260,8 @@ def main():
         exercice25()
     elif choix == "27":
         exercice27()
+    elif choix == "28":
+        exercice28()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
