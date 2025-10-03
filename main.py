@@ -269,7 +269,18 @@ def exercice34():
         else:
             print("Tapper un nombre pair")
     except ValueError:
-        print("tapper un nombre paire")
+        print("Tapper un nombre pair")
+
+#Exercice 35
+def exercice35():
+    try :
+        i = 1
+        N = int(input("Entrez un chiffre ou un nombre "))
+        while i*i<N :
+            print(i*i)
+            i = i+1
+    except ValueError:
+        print("Tapper un nombre")
         
 
 
@@ -344,6 +355,8 @@ def main():
         exercice33()
     elif choix == "34":
         exercice34()
+    elif choix == "35":
+        exercice35()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
