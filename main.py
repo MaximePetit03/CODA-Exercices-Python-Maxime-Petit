@@ -179,6 +179,20 @@ def exercice25():
     except ValueError:
         print("Tapper un nombre")
 
+#Exercice 27
+def exercice27():
+    try :
+        age = int(input("Donne moi ton age : "))
+        if age<12:
+         print("Tu es un enfant")
+        elif 12<age<=17:
+            print("Tu es un adolescent")
+        else :
+            print("tu est un adulte")
+    except ValueError:
+        print("Tapper un nombre")
+
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -233,6 +247,8 @@ def main():
         exercice24()
     elif choix == "25":
         exercice25()
+    elif choix == "27":
+        exercice27()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
