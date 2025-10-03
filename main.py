@@ -220,6 +220,20 @@ def exercice29():
     except ValueError:
         print("Tappe un nombre")
 
+#Exercice 30
+def exercice30():
+    try:
+        N = int(input("Donne moi un nombre : "))
+        for i in range(1, N+1):
+            print (i)
+    except ValueError:
+        print("Tappe un nombre")
+
+
+
+
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -279,6 +293,8 @@ def main():
         exercice28()
     elif choix == "29":
         exercice29()
+    elif choix == "30":
+        exercice30()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
