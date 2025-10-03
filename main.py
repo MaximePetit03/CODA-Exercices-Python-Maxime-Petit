@@ -238,6 +238,19 @@ def exercice31():
     except ValueError:
         print("Tappe un nombre")
 
+#Exercice 32
+def exercice32():
+    somme = 0
+    try:
+        N = int(input("Donne moi un nombre : "))
+        for i in range(0, N+1):
+            somme = somme + i
+        print (somme)
+    except ValueError:
+        print("Tappe un nombre")
+
+
+
 
 
 
@@ -306,6 +319,8 @@ def main():
         exercice30()
     elif choix == "31":
         exercice31()
+    elif choix == "32":
+        exercice32()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
